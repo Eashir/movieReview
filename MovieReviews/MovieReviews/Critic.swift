@@ -21,7 +21,7 @@ class Critic {
     }
     
     convenience init?(from dictionary: [String: AnyObject]) throws {
-        if let name = dictionary["display_name"] as? String
+        if let name = dictionary["name"] as? String
         {
             self.init(name: name)
         } else {
@@ -30,21 +30,26 @@ class Critic {
     }
     
     static func critics(from data:Data) -> [Critic]? {
-        var criticsToReturn: [Critic]? = []
+        var critics = [Critic]()
+        
         
         do {
             let jsonData: Any = try JSONSerialization.jsonObject(with: data, options: [])
             
-            guard let response: [String: AnyObject] = jsonData as? [String: AnyObject],
-                let results = response["results"] as? [[String: AnyObject]] else {
+            guard let response: [String: AnyObject] = jsonData as? [String: AnyObject]//data
+                 else {
                     throw CriticModelParseError.results(json: jsonData)
             }
             
-            for criticDict in results {
-                if let critic = try Critic(from: criticDict) {
-                    criticsToReturn?.append(critic)
-                }
+            
+            
+                
+            if let critic = try Critic(from: response) {
+                critics.append(critic)
             }
+            
+            
+           
         }
         catch let CriticModelParseError.results(json: json) {
             print("Error encountered with parsing 'critic' or 'results' key for object: \(json)")
@@ -53,6 +58,6 @@ class Critic {
             print("Unknown parsing error")
         }
         
-        return criticsToReturn
+        return critics
     }
 }

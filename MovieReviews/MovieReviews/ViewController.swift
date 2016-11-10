@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        APIRequestManager.manager.getData(endPoint: "https://api.nytimes.com/svc/movies/v2/critics/all.json?api-key=3544f4d7480f47b8befc2446f096fb3f") { (data: Data?) in
+        APIRequestManager.manager.getData(endPoint: "https://global.api.pvp.net/api/lol/static-data/na/v1.2/champion?api_key=RGAPI-d738917d-a306-4003-92a0-c00f74a49fab") { (data: Data?) in
             if let validData = data,
                 let validCritics = Critic.critics(from: validData) {
                 self.critics =  validCritics

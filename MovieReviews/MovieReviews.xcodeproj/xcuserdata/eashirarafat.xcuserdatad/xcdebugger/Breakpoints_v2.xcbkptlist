@@ -23,8 +23,8 @@
                   symbolName = "MovieReviews.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; MovieReviews.ViewController"
                   moduleName = "MovieReviews"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/eashirarafat/Documents/Classwork/Unit%203/MovieReviews/MovieReviews/ViewController.swift"
-                  timestampString = "500070442.26098"
+                  urlString = "file:///Users/eashirarafat/Documents/Classwork/Unit%203/movieReview/MovieReviews/MovieReviews/ViewController.swift"
+                  timestampString = "500434458.775155"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -38,8 +38,8 @@
                   symbolName = "MovieReviews.ViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; MovieReviews.ViewController"
                   moduleName = "MovieReviews"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/eashirarafat/Documents/Classwork/Unit%203/MovieReviews/MovieReviews/ViewController.swift"
-                  timestampString = "500070442.263199"
+                  urlString = "file:///Users/eashirarafat/Documents/Classwork/Unit%203/movieReview/MovieReviews/MovieReviews/ViewController.swift"
+                  timestampString = "500434458.777327"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -53,8 +53,8 @@
                   symbolName = "MovieReviews.ViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;MovieReviews.ViewController&gt;"
                   moduleName = "MovieReviews"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/eashirarafat/Documents/Classwork/Unit%203/MovieReviews/MovieReviews/ViewController.swift"
-                  timestampString = "500070442.265346"
+                  urlString = "file:///Users/eashirarafat/Documents/Classwork/Unit%203/movieReview/MovieReviews/MovieReviews/ViewController.swift"
+                  timestampString = "500434458.77951"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -68,8 +68,8 @@
                   symbolName = "MovieReviews.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;MovieReviews.ViewController&gt;"
                   moduleName = "MovieReviews"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/eashirarafat/Documents/Classwork/Unit%203/MovieReviews/MovieReviews/ViewController.swift"
-                  timestampString = "500070442.267886"
+                  urlString = "file:///Users/eashirarafat/Documents/Classwork/Unit%203/movieReview/MovieReviews/MovieReviews/ViewController.swift"
+                  timestampString = "500434458.782019"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -98,7 +98,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MovieReviews/Critic.swift"
@@ -109,6 +109,54 @@
             endingLineNumber = "24"
             landmarkName = "init(from:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieReviews/Critic.swift"
+            timestampString = "500434446.659401"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "critics(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static MovieReviews.Critic.critics (from : Foundation.Data) -&gt; Swift.Optional&lt;Swift.Array&lt;MovieReviews.Critic&gt;&gt;"
+                  moduleName = "MovieReviews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eashirarafat/Documents/Classwork/Unit%203/movieReview/MovieReviews/MovieReviews/Critic.swift"
+                  timestampString = "500434458.791028"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "680">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static MovieReviews.Critic.critics (from : Foundation.Data) -&gt; Swift.Optional&lt;Swift.Array&lt;MovieReviews.Critic&gt;&gt;"
+                  moduleName = "MovieReviews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eashirarafat/Documents/Classwork/Unit%203/movieReview/MovieReviews/MovieReviews/Critic.swift"
+                  timestampString = "500434458.792578"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "861">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
