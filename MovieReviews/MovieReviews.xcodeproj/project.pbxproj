@@ -12,9 +12,9 @@
 		CCC7CCE91DCCD9CC008CB425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC7CCE71DCCD9CC008CB425 /* Main.storyboard */; };
 		CCC7CCEB1DCCD9CC008CB425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC7CCEA1DCCD9CC008CB425 /* Assets.xcassets */; };
 		CCC7CCEE1DCCD9CC008CB425 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC7CCEC1DCCD9CC008CB425 /* LaunchScreen.storyboard */; };
-		CCC7CCFA1DCCDA7D008CB425 /* Critic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC7CCF91DCCDA7D008CB425 /* Critic.swift */; };
+		CCC7CCFA1DCCDA7D008CB425 /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC7CCF91DCCDA7D008CB425 /* Champion.swift */; };
 		CCC7CCFC1DCCDA8A008CB425 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC7CCFB1DCCDA8A008CB425 /* APIRequestManager.swift */; };
-		CCC7CD031DCCF834008CB425 /* CriticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC7CD021DCCF834008CB425 /* CriticTableViewCell.swift */; };
+		CCC7CD031DCCF834008CB425 /* ChampionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC7CD021DCCF834008CB425 /* ChampionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +25,9 @@
 		CCC7CCEA1DCCD9CC008CB425 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCC7CCED1DCCD9CC008CB425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCC7CCEF1DCCD9CC008CB425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCC7CCF91DCCDA7D008CB425 /* Critic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Critic.swift; sourceTree = "<group>"; };
+		CCC7CCF91DCCDA7D008CB425 /* Champion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
 		CCC7CCFB1DCCDA8A008CB425 /* APIRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
-		CCC7CD021DCCF834008CB425 /* CriticTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriticTableViewCell.swift; sourceTree = "<group>"; };
+		CCC7CD021DCCF834008CB425 /* ChampionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 				CCC7CCFE1DCCDCD5008CB425 /* View Controllers */,
 				CCC7CCFD1DCCDCB2008CB425 /* Networking */,
 				CCC7CCE71DCCD9CC008CB425 /* Main.storyboard */,
-				CCC7CCF91DCCDA7D008CB425 /* Critic.swift */,
+				CCC7CCF91DCCDA7D008CB425 /* Champion.swift */,
 				CCC7CCEA1DCCD9CC008CB425 /* Assets.xcassets */,
 				CCC7CCEC1DCCD9CC008CB425 /* LaunchScreen.storyboard */,
 				CCC7CD011DCCDE1D008CB425 /* Supportu */,
@@ -83,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				CCC7CCE51DCCD9CC008CB425 /* ViewController.swift */,
-				CCC7CD021DCCF834008CB425 /* CriticTableViewCell.swift */,
+				CCC7CD021DCCF834008CB425 /* ChampionTableViewCell.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -171,9 +171,9 @@
 			files = (
 				CCC7CCFC1DCCDA8A008CB425 /* APIRequestManager.swift in Sources */,
 				CCC7CCE61DCCD9CC008CB425 /* ViewController.swift in Sources */,
-				CCC7CD031DCCF834008CB425 /* CriticTableViewCell.swift in Sources */,
+				CCC7CD031DCCF834008CB425 /* ChampionTableViewCell.swift in Sources */,
 				CCC7CCE41DCCD9CC008CB425 /* AppDelegate.swift in Sources */,
-				CCC7CCFA1DCCDA7D008CB425 /* Critic.swift in Sources */,
+				CCC7CCFA1DCCDA7D008CB425 /* Champion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,20 +11,26 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-    var critics: [Critic] = []
+    var champions: [champion] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        APIRequestManager.manager.getData(endPoint: "https://global.api.pvp.net/api/lol/static-data/na/v1.2/champion?api_key=RGAPI-d738917d-a306-4003-92a0-c00f74a49fab") { (data: Data?) in
-            if let validData = data,
-                let validCritics = Critic.critics(from: validData) {
-                self.critics =  validCritics
-                DispatchQueue.main.async {
-                    self.tableView?.reloadData()
-                }
+        APIRequestManager.manager.getData(endPoint: "https://global.api.pvp.net/api/lol/static-data/na/v1.2/champion?api_key=RGAPI-d738917d-a306-4003-92a0-c00f74a49fab") { (champs) in
+            guard let champsArray = champs else { return }
+            self.champions = champsArray
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
             }
         }
+        
+//        APIRequestManager.manager.getData(endPoint: "https://global.api.pvp.net/api/lol/static-data/na/v1.2/champion?api_key=RGAPI-d738917d-a306-4003-92a0-c00f74a49fab") { (data: Data?) in
+//            if let validData = data, let validchampions = champion.champions(from: validData) {
+//                self.champions =  validchampions
+//                DispatchQueue.main.async {
+//                    self.tableView.reloadData()
+//                }
+//            }
+//        }
     }
     
     
@@ -42,13 +48,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.critics.count
+        return self.champions.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "criticCell", for: indexPath)
-        cell.textLabel?.text = critics[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "championCell", for: indexPath)
+        cell.textLabel?.text = champions[indexPath.row].name
         // Configure the cell...
         
         return cell

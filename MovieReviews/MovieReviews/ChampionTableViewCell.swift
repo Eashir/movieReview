@@ -1,5 +1,5 @@
 //
-//  CriticTableViewCell.swift
+//  championTableViewCell.swift
 //  MovieReviews
 //
 //  Created by Eashir Arafat on 11/4/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CriticTableViewCell: UITableViewCell {
+class championTableViewCell: UITableViewCell {
 
    
     override func awakeFromNib() {
