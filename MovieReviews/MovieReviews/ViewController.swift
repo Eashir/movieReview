@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     var champions: [champion] = []
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         APIRequestManager.manager.getData(endPoint: "https://global.api.pvp.net/api/lol/static-data/na/v1.2/champion?api_key=RGAPI-d738917d-a306-4003-92a0-c00f74a49fab") { (champs) in
